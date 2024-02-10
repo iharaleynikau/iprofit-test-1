@@ -21,6 +21,10 @@ $error-color: rgb(255, 0, 0);
   overflow: hidden;
 }
 
+.scrollbar-gutter {
+  scrollbar-gutter: stable;
+}
+
 body {
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;
@@ -38,7 +42,7 @@ input, textarea {
 
 textarea {
   resize: none;
-  height: 50px;
+  height: 100px;
 }
 
 label {
@@ -50,11 +54,9 @@ h1 {
 }
 
 .main-wrapper {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
   max-width: $base-width;
+  margin: 0 auto;
+  padding: 10px;
 }
 
 form {
