@@ -3,7 +3,7 @@ import ajaxRequest from './ajaxRequest';
 
 const validateForm = () => {
   const form = document.querySelector('form');
-  const button = document.querySelector('button');
+  const button = document.getElementById('submit-button');
   const successMessage = document.getElementById('success-message');
 
   const baseUrl = 'http://localhost:9090/auth/registration';
