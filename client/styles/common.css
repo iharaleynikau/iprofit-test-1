@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  background-color: #222428;
+  color: #EC3730;
+}
+
+input, textarea {
+  outline: none;
+  border: none;
+  padding: 12px;
+  color: #ffffff;
+  background-color: rgb(72, 72, 72);
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.main-wrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 350px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0 15px 0;
+}
+
+.error {
+  color: rgb(255, 0, 0);
+  font-size: 12px;
+  padding-top: 5px;
+}
+
+.error-input {
+  border: 1px solid rgb(255, 0, 0);
+}
+
+.success {
+  color: rgb(0, 255, 0);
+  text-align: center;
+}
+
+button {
+  padding: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin: 15px 0 15px 0;
+  background-color: #EC3730;
+  color: #ffffff;
+}
+button:hover {
+  background-color: #ffffff;
+  color: #000000;
+  transition: 0.1s;
+}
+button:not(hover) {
+  transition: 0.1s;
+}/*# sourceMappingURL=common.css.map */

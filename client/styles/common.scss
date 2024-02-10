@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+$base-width: 350px;
+$margin: 15px 0 15px 0;
+$padding: 12px;
+
+$main-background-color: #222428;
+$main-accent-color: #EC3730;
+$success-color: rgb(0, 255, 0);
+$error-color: rgb(255, 0, 0);
+
+* {
+  padding: 0;
+  margin: 0; 
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  background-color: $main-background-color;
+  color: $main-accent-color;
+}
+
+input, textarea {
+  outline: none;
+  border: none;
+  padding: $padding;
+  color: #ffffff;
+  background-color: rgb(72, 72, 72);
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.main-wrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: $base-width;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin: $margin;
+}
+
+.error {
+  color: $error-color;
+  font-size: 12px;
+  padding-top: 5px;
+}
+
+.error-input {
+  border: 1px solid $error-color;
+}
+
+.success {
+  color: $success-color;
+  text-align: center;
+}
+
+button {
+  padding: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin: $margin;
+  background-color: $main-accent-color;
+  color: #ffffff;
+
+  &:hover {
+    background-color: #ffffff;
+    color: #000000;
+    transition: 0.1s;
+  }
+
+  &:not(hover) {
+    transition: 0.1s;
+  }
+}

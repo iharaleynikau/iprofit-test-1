@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>itprofit-test</title>
+</head>
+
+<body>
+  <div class="main-wrapper">
+    <form novalidate>
+      <h1>Registration form</h1>
+      <div class="input-container">
+        <label for="username">
+          Name:
+        </label>
+        <input type="text" name="username" required>
+        <span class="error" id="username-error"></span>
+      </div>
+      <div class="input-container">
+        <label for="email">
+          E-mail:
+        </label>
+        <input type="email" name="email" required>
+        <span class="error" id="email-error"></span>
+      </div>
+      <div class="input-container">
+        <label for="phone-number">
+          Phone number:
+        </label>
+        <input name="phone-number" id="phone-number" type="tel" required>
+        <span class="error" id="phone-number-error"></span>
+      </div>
+      <div class="input-container">
+        <label for="text">
+          Message:
+        </label>
+        <textarea name="text" required></textarea>
+        <span class="error" id="message-error"></span>
+      </div>
+      <button type="submit">Submit</button>
+      <span class="success" id="success-message"></span>
+    </form>
+  </div>
+
+</body>
+
+</html>
