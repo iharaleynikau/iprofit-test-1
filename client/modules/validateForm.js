@@ -6,7 +6,7 @@ const validateForm = () => {
   const button = document.getElementById('submit-button');
   const successMessage = document.getElementById('success-message');
 
-  const baseUrl = 'http://localhost:9090/auth/registration';
+  const baseUrl = '/auth/registration';
 
   IMask(document.getElementById('phone-number'), {
     mask: '+{7}(000)000-00-00'
@@ -43,6 +43,8 @@ const validateForm = () => {
       const data = await ajaxRequest(baseUrl, 'POST', request, {
         'Content-type': 'application/json'
       });
+
+      console.log(data);
 
       button.disabled = false;
 

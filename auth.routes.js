@@ -9,7 +9,7 @@ router.post(
   [
     check('username', 'field must not be empty').notEmpty(),
     check('email', 'incorrect email').isEmail(),
-    check('phone-number', 'incorrect phone number').isLength({ min: 16 }).notEmpty(),
+    check('phone-number', 'incorrect phone number').isLength({ min: 16 }),
     check('message', 'field must not be empty').notEmpty()
   ],
   authController.registration
