@@ -1,5 +1,11 @@
 const ajaxRequest = async (url, method = 'GET', body = null, headers = {}) => {
-  const request = await fetch(url, {
+  let originLocation = '';
+
+  if (window.location.origin === 'http://localhost:8080') {
+    originLocation = 'http://localhost:9090';
+  }
+
+  const request = await fetch(originLocation + url, {
     method,
     body,
     headers
